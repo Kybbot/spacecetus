@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--main-text: #000000;
+	--secondary-text:  #4a4a4a;
+	--accent-color:#C80000;
+	--transition: all .3s ease;
+}

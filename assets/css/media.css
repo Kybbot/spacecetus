@@ -1,0 +1,132 @@
+@media screen and (max-width: 1200px) {
+	.footer-nav {
+		margin: 10px 0px;
+	}
+	
+	.footer-nav ul {
+		justify-content: flex-start;
+	}
+	
+	.footer-nav ul li a {
+		margin-right: 30px;
+	}
+	
+	.big-people-info-description {
+		max-width: 600px;
+	}
+	
+	.about-main iframe {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.big-people-info-name {
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+	
+	.big-people-info-description {
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	
+	.big-people-img img {
+		width: 230px;
+	}
+	
+	.about-main iframe {
+		height: 450px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.big-people-img {
+		margin-top: 20px;
+	}
+	
+	.about-main iframe {
+		height: 350px;
+	}
+	
+	.gallery .photo-container {
+		width: 100%;
+	}
+	
+	.sounds {
+		justify-content: center;
+	}
+	
+	.sounds .sound-container {
+		margin: 0 0 30px 0;
+	}
+	
+	.search-results li {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.about-main iframe {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.contacts {
+		font-size: 18px;
+	}
+
+	.contacts-title {
+		font-size: 60px;
+	}
+
+	.contacts-street {
+		font-size: 19px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.main-header nav ul li {
+		margin-right: 10px;
+	}
+
+	.spost-content iframe, .spost-content video {
+		min-height: 300px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.main-header .logo a {
+		font-size: 18px;
+	}
+
+	.about-main iframe {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 345px) {
+	.big-people-info-name {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.big-people-info-description {
+		font-size: 16px;
+	}
+
+	.big-people-info-brief {
+		font-size: 14px;
+	}
+
+	.big-people {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.search-form-input {
+		width: 85%;
+	}
+}
