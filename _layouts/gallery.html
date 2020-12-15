@@ -1,0 +1,35 @@
+{% include /head.html %}
+
+{% include /header.html %}
+
+<main>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-xl-12">
+
+					<div class="gallery">
+						{% for item in site.data.gallery %}
+						<div class="photo-container">
+							<img src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAEALAAAAAAQAAkAAAIKjI+py+0Po5yUFQA7" data-src="{{ site.baseurl }}{{ item.img }}" alt="{{ item.description }}" class="gallery-photo">
+							<p class="photo-description">
+								{% if item.description.size > 2 %}
+									{{ item.description }}
+								{% endif %}
+							</p>
+						</div>
+						{% endfor %}
+					</div>
+
+			</div>
+		</div>
+	</div>
+</main>
+
+<div class="modal">
+	<div class="modal-content">
+		<img class="modal-content-img" alt="">
+		<span class="modal-content-close"> &times; </span>
+	</div>
+</div>
+
+{% include /footer.html %}

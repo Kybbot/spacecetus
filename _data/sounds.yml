@@ -1,0 +1,53 @@
+- name: Солнечная сонификация
+  number: 1
+  img: /assets/img/sounds/1.webp
+  audio: /assets/audio/sun_sonification.wav
+  author: Henrik Dønnestad
+
+- name: Звуки Сатурна
+  number: 2
+  img: /assets/img/sounds/2.webp
+  audio: /assets/audio/sounds_of_saturn.mp3
+  author: Henrik Dønnestad
+
+- name: Юнона пересекает ударную волну Юпитера
+  number: 3
+  img: /assets/img/sounds/3.webp
+  audio: /assets/audio/juno_crossing_jupiter's_bow_shock.wav
+  author: Henrik Dønnestad
+
+- name: Юнона вход в магнитосферу Юпитера
+  number: 4
+  img: /assets/img/sounds/4.webp
+  audio: /assets/audio/juno_entering_jupiter's_magnetosphere.wav
+  author: Henrik Dønnestad
+
+- name: 'Kepler: Звезда KIC12268220C Кривая Света' 
+  number: 5
+  img: /assets/img/sounds/5.webp
+  audio: /assets/audio/kepler_star_light_curve.mp3
+  author: Henrik Dønnestad
+
+- name: 'Kepler: Звезда KIC7671081B Кривая Света'
+  number: 6
+  img: /assets/img/sounds/6.webp
+  audio: /assets/audio/kepler_star_light_curve2.mp3
+  author: Henrik Dønnestad
+
+- name: 'Вояджер: Молния на Юпитере'
+  number: 7
+  img: /assets/img/sounds/7.webp
+  audio: /assets/audio/voyager_jupiter_lightning.mp3
+  author: Henrik Dønnestad
+
+- name: 'Звездная пыль: прохождение кометы Tempel 1'
+  number: 8
+  img: /assets/img/sounds/8.webp
+  audio: /assets/audio/stardust_tempel1.mp3
+  author: Henrik Dønnestad
+
+- name: 'Вояджер: Звуки межзвездной плазмы'
+  number: 9
+  img: /assets/img/sounds/9.webp
+  audio: /assets/audio/voyager_interstellar_plasma_sounds.mp3
+  author: Henrik Dønnestad

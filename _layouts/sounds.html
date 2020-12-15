@@ -1,0 +1,29 @@
+{% include /head.html %}
+
+{% include /header.html %}
+
+<main>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-xl-12">
+
+				<div class="sounds">
+
+					{% for item in site.data.sounds %}
+						<div class="sound-container" style="background-image: url('{{ site.baseurl}}{{item.img}}');">
+							<div class="sound-name"><mark>{{item.name}}</mark></div>
+							<div class="sound-number"><span class="num">{{item.number}}</span> <span class="text">автор рисунка: {{item.author}}</span></div>
+							<audio class="sound-file" controls>
+								<source src="{{ site.baseurl }}{{item.audio}}">
+							</audio>
+						</div>
+					{% endfor %}
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</main>
+
+{% include /footer.html %}

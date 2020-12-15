@@ -1,0 +1,10 @@
+- name: Главная
+  link: /
+- name: События
+  link: /activity.html
+- name: Звуки космоса
+  link: /sounds.html
+- name: Галерея
+  link: /gallery.html
+# - name: О нас
+#   link: /about.html

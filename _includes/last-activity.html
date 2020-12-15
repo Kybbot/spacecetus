@@ -1,0 +1,7 @@
+<div class="last-activities">
+
+	{% for post in site.categories.recommended limit: 3 %}
+		{% include activity.html %}
+	{% endfor %}
+
+</div>

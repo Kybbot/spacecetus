@@ -1,0 +1,39 @@
+name: Spacecetus
+title: Spacecetus
+email: kybbot1@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Блог о космосе в котором можно почитать различные статьи, 
+  узнать о известных событиях, 
+  послушать различные звуки косомоса и 
+  посмотреть красивые фотографии.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+themecolor: '#202225'
+lang: ru
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - sass
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+paginate: 9
+paginate_path: "/blog/page:num/"
+
+sass:
+  style: compact
+  sass_dir: _sass
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

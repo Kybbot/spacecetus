@@ -1,0 +1,28 @@
+{% include /head.html %}
+
+{% include /header.html %}
+
+<main>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-xl-12 d-flex justify-content-around align-items-center flex-wrap">
+
+				{% for item in site.data.activity %}
+					<div class="activity">
+						<div class="activity-info">
+							<div class="activity-info-date"> {{ item.date }}</div>
+							<p class="activity-info-name">{{ item.title }}</p>
+							<div class="activity-info-location">{{ item.location }}</div>
+						</div>
+						<div class="activity-img">
+							<img src="{{ site.baseurl }}{{ item.img }}" alt="{{ item.title }}">
+						</div>
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+	</div>
+</main>
+
+{% include /footer.html %}

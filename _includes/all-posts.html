@@ -1,0 +1,7 @@
+<div class="posts">
+
+	{% for post in paginator.posts limit: 9 offset: 0 %}
+		{% include article.html %}
+	{% endfor %}
+
+</div>

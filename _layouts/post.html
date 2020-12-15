@@ -1,0 +1,27 @@
+{% include /head.html %}
+
+{% include /header.html %}
+
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-10 offset-xl-1">
+				
+				<article class="spost">
+					<header class="spost-header">
+						<h1 class="spost-header-title">{{ page.title }}</h1>
+						<div class="spost-header-meta">
+							<div class="spost-header-meta-date"><i class="far fa-calendar-alt"></i> {% include date.html date=page.date %}</div>
+						</div>
+					</header>
+					<main class="spost-content">
+						{{ content }}
+					</main>
+				</article>
+
+			</div>
+		</div>
+	</div>
+</main>
+
+{% include /footer.html %}

@@ -1,0 +1,14 @@
+- title: Запуск первой АМС
+  location: Космодром Байконур
+  date: 2.01.1959
+  img: 'assets/img/activity/moon-1/moon-1.jpg'
+
+- title: Запуск ИСЗ в США
+  location: Мыс Канаверал
+  date: 1.02.1958
+  img: 'assets/img/activity/explorer-1/explorer-1.jpg'
+
+- title: Запуск первого искуственного спутника Земли
+  location: Космодром Байконур
+  date: 4.09.1957
+  img: 'assets/img/activity/satellite-1/satellite-1.jpg'
