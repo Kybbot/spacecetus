@@ -3,9 +3,8 @@
 {% include /header.html %}
 
 <main>
-	<div class="container mt-5">
+	<div class="container">
 		<div class="row">
-			<div class="col-xl-12">
 
 					<div class="gallery">
 						{% for item in site.data.gallery %}
@@ -20,16 +19,12 @@
 						{% endfor %}
 					</div>
 
-			</div>
 		</div>
 	</div>
 </main>
 
 <div class="modal">
-	<div class="modal-content">
-		<img class="modal-content-img" alt="">
-		<span class="modal-content-close"> &times; </span>
-	</div>
+	<img class="modal-content" alt="">
 </div>
 
 {% include /footer.html %}

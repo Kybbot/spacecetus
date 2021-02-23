@@ -1,12 +1,20 @@
 let images = document.querySelectorAll('.gallery-photo');
 lazyload(images);
 
-let images2 = document.querySelectorAll('.lazy');
-lazyload(images2);
+document
+	.querySelectorAll('.little-post')
+	.forEach( item => {
+		item.addEventListener('mouseover', () => {
+			item.style.backgroundImage = `url(${item.dataset.img})`
+		});
+		item.addEventListener('mouseout', () => {
+			item.style.backgroundImage = `url()`
+		});
+	});
 
 let modal = document.querySelector('.modal');
 let closeBtn = document.querySelector('.modal-content-close');
-let modalImg = document.querySelector('.modal-content-img');
+let modalImg = document.querySelector('.modal-content');
 
 document
 	.querySelectorAll('.gallery-photo')
@@ -22,7 +30,9 @@ window.addEventListener('click', event => {
 		modal.style.display = 'none'
 	}
 });
+
+const toTop = document.querySelector('.top-btn');
 	
-closeBtn.addEventListener('click', () => {
-	modal.style.display = 'none';
+toTop.addEventListener('click', () => {
+	scrollTo(0, 0);
 });

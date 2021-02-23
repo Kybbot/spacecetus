@@ -1,18 +1,14 @@
 <header class="main-header" id="top">
-	<div class="container-fluid">
-		<div class="row d-flex align-items-center">
-			<div class="col-xl-6">
-				<div class="logo"><img src="/assets/img/favicon/1.svg" alt="">{{ site.name }}</div>
-			</div>
-			<div class="col-xl-6">
-				<nav>
-					<ul>
-						{% for item in site.data.navigation %}
-							<li><a href="{{ item.link }}">{{ item.name }}</a></li>
-						{% endfor %}
-					</ul>
-				</nav>
-			</div>
+	<div class="container">
+		<div class="row">
+			<div class="logo"><img src="/assets/img/favicon/1.svg" alt="">{{ site.name }}</div>
+			<nav>
+				<ul>
+					{% for item in site.data.navigation %}
+						<li><a href="{{ item.link }}">{{ item.name }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
 		</div>
 	</div>
 </header>

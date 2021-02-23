@@ -1,32 +1,27 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-12 d-flex justify-content-between align-items-center flex-wrap">
-				<div class="social-links">
-					{% for item in site.data.socials %}
-							<a class="social-link {{ item.name }}" href="{{ item.link }}" target="blank"><i class="fab fa-{{ item.name }}"></i></a>
-					{% endfor %}
-				</div>
-
-				<nav class="footer-nav">
-					<ul>
-						{% for item in site.data.navigation %}
-							<li><a href="{{ item.link }}">{{ item.name }}</a></li>
-						{% endfor %}
-					</ul>
-				</nav>
-
-				<a href="#top" class="top-btn" id="top-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></a>
-
+		
+			<div class="social-links">
+				{% for item in site.data.socials %}
+					<a class="social-link {{ item.name }}" href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.name }}"></i></a>
+				{% endfor %}
 			</div>
+
+			<nav class="footer-nav">
+				<ul>
+					{% for item in site.data.navigation %}
+						<li><a href="{{ item.link }}">{{ item.name }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+
+			<a class="top-btn" id="top-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></a>
+
 		</div>
 	</div>
 </footer>
 
-<script src="/assets/js/lunr.min.js"></script>
-<script src="/assets/js/lunr.stemmer.support.js"></script>
-<script src="/assets/js/lunr.ru.js"></script>
-<script src="/assets/js/search.js"></script>
 <script src="/assets/js/lazyload.min.js"></script>
 <script src="/assets/js/main.js"></script>
 

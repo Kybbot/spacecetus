@@ -1,18 +1,42 @@
 <main>
 	<div class="container">
-		<div class="row">
-			<div class="col-xl-9">
+		<div class="posts">
 
-				{% include all-posts.html %}
+			{% for post in paginator.posts limit: 1 offset: 0 %}
+				<div class="big-post span-col-2 span-row-2" style="background-image: url({{ site.baseurl }}{{ post.img }});">
+					<h2 class="big-post__title"><a class="big-post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+					<p class="big-post__description">{{ post.description }}</p>
+				</div>
+			{% endfor %}
 
-				{% include pagination.html %}
+			{% for post in paginator.posts limit: 4 offset: 1 %}
+				<div class="little-post" data-img="{{ site.baseurl }}{{ post.img }}">
+					<h2 class="little-post__title"><a class="little-post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+				</div>
+			{% endfor %}
 
-			</div>
-			<div class="col-xl-3">
+			{% for post in paginator.posts limit: 4 offset: 5 %}
+				<div class="medium-post span-col-2">
+					<img class="medium-post__img" src="{{ site.baseurl }}{{ post.img }}" alt="{{ post.title }}">
+					<div class="medium-post__text">
+						<h2 class="medium-post__title"><a class="medium-post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+						<p class="medium-post__description">
+							{{ post.description }} 
+						</p>
+					</div>
+				</div>
+			{% endfor %}
 
-				{% include aside.html %}
-				
-			</div>
+			{% for post in paginator.posts limit: 8 offset: 9 %}
+				<div class="default-post">
+					<h2 class="default-post__title"><a class="default-post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+					<p class="default-post__description">{{ post.description }}</p>
+				</div>
+			{% endfor %}
+
 		</div>
+
+		<a class="all-posts__btn" href="all-posts.html">Все посты</a>
+
 	</div>
 </main>

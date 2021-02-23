@@ -6,7 +6,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   узнать о известных событиях, 
   послушать различные звуки косомоса и 
   посмотреть красивые фотографии.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 themecolor: '#202225'
 lang: ru
@@ -18,7 +18,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-paginate: 9
+paginate: 17
 paginate_path: "/blog/page:num/"
 
 exclude:

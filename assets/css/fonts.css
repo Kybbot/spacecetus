@@ -1,6 +1,13 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Ubuntu';
   font-style: normal;
 	font-weight: 400;
-  src: url(../fonts/RobotoRegular/RobotoRegular.ttf);
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+	font-weight: 300;
+  src: url(../fonts/Ubuntu-Light.ttf);
 }

@@ -1,0 +1,16 @@
+{% include /head.html %}
+
+{% include /header.html %}
+
+<div class="container">
+	<div class="all-posts">
+		{% for post in site.posts %}
+			<div class="default-post">
+				<h2 class="default-post__title"><a class="default-post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+				<p class="default-post__description">{{ post.description }}</p>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% include /footer.html %}
