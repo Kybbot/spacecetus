@@ -14,11 +14,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 ::placeholder {
-	color:var(--main-text);
+	color: var(--main-text);
 }
 
 ::selection {
-	background-color:var(--accent-color);
+	background-color: var(--accent-color);
 	color: #fff;
 }
 
@@ -28,24 +28,27 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
-	font-family: "Ubuntu", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	overflow-x: hidden;
-	color:var(--main-text);
+	color: var(--main-text);
 	background-color: #ffffff;
 	margin: 0;
 	padding: 0;
 }
 
-body input, body textarea {
-	border:var(--main-text) 1px solid;
+body input,
+body textarea {
+	border: var(--main-text) 1px solid;
 	outline: none;
 }
 
-body input:focus:required:invalid, body textarea:focus:required:invalid {
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
 	border-color: red;
 }
 
-body input:required:valid, body textarea:required:valid {
+body input:required:valid,
+body textarea:required:valid {
 	border-color: green;
 }
 
@@ -63,7 +66,8 @@ body input:required:valid, body textarea:required:valid {
 	text-align: center;
 }
 
-b, strong {
+b,
+strong {
 	font-weight: bold;
 }
 
@@ -74,7 +78,7 @@ main {
 .container {
 	max-width: 1400px;
 	width: 100%;
-	margin: 0 auto; 
+	margin: 0 auto;
 	padding: 0 10px;
 }
 
@@ -91,9 +95,13 @@ main {
 	grid-gap: 20px;
 }
 
-.span-col-2{grid-column: span 2 / auto;}
+.span-col-2 {
+	grid-column: span 2 / auto;
+}
 
-.span-row-2{grid-row: span 2 / auto;}
+.span-row-2 {
+	grid-row: span 2 / auto;
+}
 
 .all-posts {
 	display: flex;
@@ -105,6 +113,7 @@ main {
 	width: 49%;
 	margin-bottom: 20px;
 	margin-right: 10px;
+	padding-right: 10px;
 }
 
 .around {
@@ -144,25 +153,17 @@ main {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
-}
-
-.main-header nav ul li {
-	margin-right: 40px;
+	gap: 40px;
 }
 
 .main-header nav ul li a {
-	color:var(--main-text);
+	color: var(--main-text);
 	text-decoration: none;
 	transition: var(--transition);
-	margin-right: 60px;
-}
-
-.main-header nav ul li:last-child {
-	margin-right: 0;
 }
 
 .main-header nav ul li a:hover {
-	color:var(--accent-color);
+	color: var(--accent-color);
 	text-decoration: none;
 }
 
@@ -201,14 +202,14 @@ main {
 .little-post {
 	background-color: #ffffff;
 	border-radius: 4px;
-	box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 	padding: 20px;
 
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 }
 
 .little-post__link {
@@ -237,7 +238,7 @@ main {
 	align-items: center;
 	background-color: #ffffff;
 	border-radius: 4px;
-	box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .medium-post__link {
@@ -251,7 +252,7 @@ main {
 
 .medium-post__img {
 	height: 100%;
-	width: 30%;
+	width: 150px;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 	object-fit: cover;
@@ -332,7 +333,8 @@ footer {
 	display: flex;
 }
 
-.social-link, .top-btn {
+.social-link,
+.top-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -348,11 +350,13 @@ footer {
 	transition: var(--transition);
 }
 
-.social-link:last-child, .top-btn:last-child {
+.social-link:last-child,
+.top-btn:last-child {
 	margin-right: 0;
 }
 
-.social-link:hover, .top-btn:hover {
+.social-link:hover,
+.top-btn:hover {
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -366,7 +370,7 @@ footer {
 }
 
 .instagram {
-	background-color: #FCD000;
+	background-color: #fcd000;
 }
 
 .instagram:hover {
@@ -374,7 +378,7 @@ footer {
 }
 
 .youtube {
-	background-color: #FF0000;
+	background-color: #ff0000;
 }
 
 .youtube:hover {
@@ -396,7 +400,7 @@ footer {
 	padding: 10px;
 	border: 4px solid #e5fffc;
 	border-radius: 4px;
-	box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 	color: #000000;
 	text-decoration: none;
 	transition: var(--transition);
@@ -418,19 +422,19 @@ footer {
 
 .footer-nav ul li a {
 	margin-right: 50px;
-	color:var(--main-text);
+	color: var(--main-text);
 	text-decoration: none;
 	transition: var(--transition);
 }
 
 .footer-nav ul li a:hover {
-	color:var(--accent-color);
+	color: var(--accent-color);
 	text-decoration: none;
 }
 
 .not-found {
 	height: 93.4vh;
-	background-image: url("/assets/img/404/1.jpg");
+	background-image: url('/assets/img/404/1.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

@@ -1,6 +1,5 @@
-@import "main.css";
-@import "post.css";
-@import "activity.css";
-@import "search.css";
-@import "gallery.css";
-@import "sounds.css";
+@import 'main.css';
+@import 'post.css';
+@import 'activity.css';
+@import 'gallery.css';
+@import 'sounds.css';
