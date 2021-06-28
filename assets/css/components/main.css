@@ -113,7 +113,6 @@ main {
 	width: 49%;
 	margin-bottom: 20px;
 	margin-right: 10px;
-	padding-right: 10px;
 }
 
 .around {
@@ -278,6 +277,7 @@ main {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	padding-right: 10px;
 }
 
 .default-post__link {
